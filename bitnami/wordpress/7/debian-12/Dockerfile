@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1.10
+# Required for the `env=` option on `--mount=type=secret` (frontend v1.10.0+); older BuildKit built-in frontends fail with "unexpected key 'env'".
 # Copyright Broadcom, Inc. All Rights Reserved.
 # SPDX-License-Identifier: APACHE-2.0
 
